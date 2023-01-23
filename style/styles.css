@@ -680,6 +680,7 @@ a {
   background-color: #FCFCFC;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding: 72px 24px 24px 24px;
 
   
 }
@@ -688,7 +689,7 @@ a {
   position: absolute;
   top: 24px;
   right: 24px;
-
+color: #000000;
   display: block;
   width: 24px;
   height: 24px;
@@ -707,11 +708,12 @@ a {
 .modal-close:hover,
 .modal-close:focus {
   background-color: var(--hover-focus-color);
+  color: #FFFFFF;
 }
 
 .modal-close:hover .close-back,
 .modal-close:focus .close-back {
-  fill: var(--white-text-color);
+  fill: currentColor;
 }
 
 
@@ -723,8 +725,7 @@ a {
 }
 
 .modal-form-title {
-  margin-top: 72px;
-  margin-bottom: 36px;
+  margin-bottom: 14px;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
@@ -735,7 +736,6 @@ a {
 .modal-form {
   display: flex;
   flex-direction: column;
-  padding: 0px 24px 24px 24px;
 }
 
 .modal-form-input {
@@ -791,6 +791,8 @@ a {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color 250ms var(--cubic-bezier);
+  display: block;
+  color: black;
 }
 
 .modal-form-textarea::placeholder {
@@ -851,7 +853,6 @@ a {
   height: 56px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 24px;
   align-self: center;
   transition: background-color 250ms var(--cubic-bezier),
     box-shadow 250ms var(--cubic-bezier);
@@ -861,4 +862,9 @@ a {
 .modal-form-btn-submit:focus {
   background-color: #404bbf;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.privacy {
+color: #4d5ae5;
+text-decoration: underline;
 }
